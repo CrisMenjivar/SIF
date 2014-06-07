@@ -1,0 +1,1178 @@
+﻿body {
+font-weight: normal;
+font-style: normal;
+text-align: justify;
+font-family: Arial;
+line-height: 130%;
+color: black;
+margin-top: 1px;
+background-color:#f7f7f7;
+height:auto;
+}
+
+/* Lists */
+ul { list-style: none; }
+ul              {  }
+ul li           { color:#000; font-size:15px; }
+
+
+hr{
+width:1000px;
+line-height:2px;
+margin-top:2px;
+margin-bottom:0px;
+padding:0px 0px 0px 0px;
+}
+
+table{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+/*border-bottom:1px navy solid;*/
+font-family:Arial;
+font-size:12px;
+}
+td {
+height:16px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+tr {
+height:16px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
+
+/*--------------------------------------------------------------------------------------------- */
+#contenedor {
+position: relative;
+margin-left: auto;
+margin-right:auto;
+margin-top: 0px; /*estaba -20px*/
+padding: 0px 0px 0px 0px;
+background-color:#eff2f7;  /*a0a0a0;   /*#878787;*/
+width:1000px;
+height:auto;
+color:black;
+box-shadow: 0 6px 10px -4px black;
+}
+
+#contenedor2 {
+position: relative;
+margin-left: auto;
+margin-right:auto;
+margin-top: 0px; /*estaba -20px*/
+padding: 0px 0px 0px 0px;
+background-color:#eff2f7;  /*a0a0a0;   /*#878787;*/
+width:1000px;
+height:auto;
+color:black;
+}
+
+
+
+/*barra de menus--------------------------------------------------------------------------------------------- */
+
+#conteencabezado{
+width:1000px;
+height:28px;
+text-align:center;
+margin-bottom:3px;
+margin-top: -5px;
+padding:0px 0px 0px 0px;
+background-color:#3b5998; /*#0070c0;*/
+}
+#cerrar{
+width:auto;
+height:30px;
+margin: 2px 2px 0px 2px;
+padding:3px 0px 0px 0px;
+/*clear:both;
+float:left;*/
+text-align:left;
+}
+
+#cerrar ul              {margin:3px 0px 0px -10px;font-weight:bold;}
+#cerrar ul li           { display:inline; margin:0px 0px 0px 0px;float:left;list-style-type: none; padding:0px 30px 0px 2px;font-size:20px;}
+#cerrar ul li a         { text-decoration:none;display:block; position:relative;
+font:15px/15px "Trebuchet MS",Arial, Helvetica, sans-serif; color:white; font-weight:bold;color:white;
+}
+#cerrar ul li a:hover   {color:orange; text-decoration:none; z-index:10;}
+#cerrar ul li ul {
+display: none;
+background:#0070c0;
+padding: 5px 0;
+position: absolute;
+margin: 0px 0px;
+z-index:10;
+border-radius:4px;
+color:black;
+}
+#cerrar ul li:hover ul {
+display: block;
+z-index:10;
+}
+#cerrar ul li ul li {
+z-index:10;
+display: block;
+float: none;
+position: relative;
+line-height: 0px;
+font:15px/15px "Trebuchet MS",Arial, Helvetica, sans-serif;
+font-weight:bold;
+padding: 3px 0px 3px 0px;
+margin: 0 0 0 0px;
+height:auto;
+
+}
+
+#cerrar menu ul li ul li a{
+z-index:10;
+display: block;
+width: auto;
+padding: 0px 3px 0px 3px;
+margin: 0 0 0 0px;
+font-weight: bold;
+}
+
+#cerrar ul li ul li a:hover {
+z-index:10;
+display: block;
+width: auto;
+color: orange;
+padding: 0px 3px 0px 3px;
+margin: 0 0 0 0px;
+font:15px/15px "Trebuchet MS",Arial, Helvetica, sans-serif;
+font-weight:bold;
+}
+
+/*--------------------------------------------------------------------------------------------- */
+
+/*BLOQUES PARA LOS DATOS DEL COLABORADOR-------------------------------------------------------------------------------- */
+
+#contedatos{
+margin:5px 0px 2px 0px;
+padding:0px 0px 0px 0px;
+width:997px;
+height:50px;
+}
+#contelinea{
+margin:5px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:997px;
+height:25px;
+}
+#izquierda{
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:498px;
+height:25px;
+color:black;
+}
+#izquierda p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 10px;
+width:488px;
+height:25px;
+font-size:14px;
+color:black;
+font-weight:bold;
+}
+#derecha{
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:498px;
+height:25px;
+color:black;
+}
+#derecha p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 10px;
+width:488px;
+height:25px;
+font-size:14px;
+color:black;
+font-weight:bold;
+}
+/*ENCABEZADO DEL AST CON SUS NOMBRES-------------------------------------------------------------------------------- */
+
+#descripcion{
+width:1000px;
+height:30px;
+/*background-color:#0070c0;*/
+background-color:#3b5998;
+padding: 0px 0px 0px 0px;
+margin-top:11px;
+}
+
+#fecha{
+float:left;
+width:84px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#fecha p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+width:80px;
+font-size:15px;
+text-align:center;
+font-weight:bold;
+}
+#descri{
+width:300px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+float:left;
+}
+#descri p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+font-size:15px;
+text-align:center;
+font-weight:bold;
+}
+#tipoact{
+float:left;
+width:116px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#tipoact p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+font-size:15px;
+text-align:left;
+font-weight:bold;
+text-align:center;
+}
+#empresa{
+width:116px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+float:left;
+}
+#empresa p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+font-size:15px;
+text-align:left;
+font-weight:bold;
+text-align:center;
+}
+#proyecto{
+float:left;
+width:146px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#proyecto p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+font-size:15px;
+text-align:left;
+font-weight:bold;
+text-align:center;
+}
+#inicio{
+float:left;
+width:75px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#inicio p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+font-size:15px;
+text-align:left;
+font-weight:bold;
+text-align:center;
+}
+#fin{
+float:left;
+width:75px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#fin p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+font-size:15px;
+font-weight:bold;
+text-align:center;
+}
+#horas{
+float:left;
+width:75px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#horas p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+font-size:15px;
+font-weight:bold;
+text-align:center;
+}
+
+/*AREA DEL FRAME--------------------------------------------------------------------------------------------- */
+
+#conteframe{
+width:997px;
+height:300px;
+/*height:400px;*/
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+background-color:#d8d8d8;
+}
+#conteframe iframe{
+border: 0px;
+width:999px;
+height:300px;
+/*height:400px;*/
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#conteframeerrores{
+width:1000px;
+height:275px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+background-color:#d8d8d8;
+}
+#conteframeerrores iframe{
+border: 0px;
+width:1000px;
+height:275px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
+#contefra{
+width:1000px;
+height:25px;
+margin:-17px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+/*background-color:#0070c0;*/
+background-color:#3b5998;
+}
+#contefra p{
+font-size:17px;
+font-family:Arial;
+text-align:center;
+color:orange;
+}
+
+
+/*--------------------------------------------------------------------------------------------- */
+
+/*------area de descripcion e inserciones con formulario-----------------------------------------------------------------------*/
+#areadatos{
+width:1000px;
+height:20px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:left;
+background-color:#3b5998;
+}
+#areadatos p{
+padding:3px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:30px;
+font-size:15px;
+text-align:center;
+font-weight:bold;
+color:white;
+text-align:left;
+background-color:#3b5998;
+}
+
+#contebloque{
+width:997px;
+height:auto;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#insertar{
+width:1000px;
+height:82px;
+background-color:#3b5998;
+padding: 0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+}
+
+#fechatex{
+float:left;
+width:81px;
+height:30px;
+margin:0px 0px 0px 2px;
+padding:0px 0px 0px 0px;
+}
+#fechatex input{
+margin:3px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:18px;
+width:81px;
+text-align:center;
+}
+#calendario{
+margin:0px 5px 0px 2px;
+float:left;
+padding:0px 0px 0px 0px;
+color:white;
+width:22px;
+height:22px;
+}
+#calendario input{
+margin:3px 0px 0px 5px;
+text-align:center;
+padding:0px 0px 0px 0px;
+color:black;
+width:22px;
+height:22px;
+font-size:11px;
+}
+
+#descritex{
+float:left;
+width:296px;
+height:30px;
+margin:0px 0px 0px 2px;
+padding:0px 0px 0px 0px;
+}
+#descritex input{
+margin:3px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:18px;
+width:293px;
+}
+
+#tipoacttex{
+width:116px;
+height:30px;
+margin:0px 0px 0px 4px;
+padding:0px 0px 0px 0px;
+float:left;
+}
+
+#tipoacttex select {
+padding:0px 0px 0px 0px;
+margin:3px 0px 0px 0px;
+text-align:left;
+font-family:Arial;
+width:115px;
+height:21px;
+}
+
+#empresatex{
+width:116px;
+height:30px;
+margin:0px 0px 0px 3px;
+padding:0px 0px 0px 0px;
+float:left;
+}
+#empresatex select {
+padding:0px 0px 0px 0px;
+margin:3px 0px 0px 0px;
+text-align:left;
+font-family:Arial;
+width:115px;
+height:21px;
+}
+
+#proyectotex{
+float:left;
+width:147px;
+height:30px;
+margin:0px 0px 0px 3px;
+padding:0px 0px 0px 0px;
+}
+#proyectotex select {
+padding:0px 0px 0px 0px;
+margin:3px 0px 0px 0px;
+text-align:left;
+font-family:Arial;
+width:146px;
+height:21px;
+}
+
+#iniciotex{
+float:left;
+width:75px;
+height:30px;
+margin:0px 0px 0px 3px;
+padding:0px 0px 0px 0px;
+}
+#iniciotex input{
+margin:3px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:18px;
+width:70px;
+font-family:Arial;
+text-align:center;
+}
+
+#fintex{
+float:left;
+width:75px;
+height:30px;
+margin:0px 0px 0px 2px;
+padding:0px 0px 0px 0px;
+}
+#fintex input{
+margin:3px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:18px;
+width:70px;
+text-align:center;
+font-family:Arial;
+}
+
+#horastex{
+float:left;
+width:75px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#horastex input{
+margin:3px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:18px;
+width:70px;
+text-align:center;
+font-family:Arial;
+}
+
+#botonfinal{
+width:997px;
+height:30px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+background-color:#3b5998;
+color:white;
+}
+
+#format{
+margin:0px 0px 0px 0px;
+float:left;
+padding:0px 0px 0px 0px;
+color:white;
+width:95px;
+height:30px;
+}
+#format input{
+margin:0px 0px 0px 5px;
+text-align:center;
+padding:0px 0px 0px 0px;
+color:black;
+width:75px;
+height:28px;
+font-size:11px;
+}
+#format p{
+margin:0px 0px 0px 0px;
+text-align:center;
+padding:0px 0px 0px 0px;
+color:white;
+width:95px;
+height:30px;
+font-size:11px;
+font-weight:bold;
+}
+#botonfinal1{
+float:left;
+width:60px;
+height:30px;
+margin:2px 0px 0px 10px;
+padding:0px 0px 0px 0px;
+/*background-color:#3b5998;*/
+}
+
+#botonfinal1 p{
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	width:131px;
+	height:30px;
+	font-size:12px;
+	color:white;
+	
+}
+
+#botonfinal1 input{
+margin:0px 0px 0px 0px;
+height:18px;
+width:50px;
+padding:0px 0px 0px 0px;
+text-align:center;
+font-size:15px;
+font-family:Arial;
+}
+
+#proyectmsj{
+float:left;
+width:450px;
+height:30px;
+margin:0px 0px 0px 290px;
+padding:0px 0px 0px 0px;
+
+}
+#proyectmsj select {
+padding:0px 0px 0px 0px;
+margin:3px 0px 0px 0px;
+text-align:left;
+font-family:Arial;
+width:450px;
+height:24px;
+}
+
+
+/*DESCRIPCION DE ENCABEZADOS PARA LAS INSERCIONES-----------------------------------------------------------------------*/
+#contebloque{
+width:995px;
+height:auto;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#bloque1 {
+float:left;
+width:85px;
+height:20px;
+margin:0px 0px 2px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:center;
+}
+#bloque1 p{
+padding:1px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:20px;
+font-size:15px;
+text-align:center;
+font-weight:bold;
+color:white;
+}
+#bloque2 {
+float:left;
+width:300px;
+height:20px;
+margin:0px 0px 2px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:center;
+}
+#bloque2 p{
+padding:1px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:20px;
+font-size:15px;
+text-align:center;
+font-weight:bold;
+color:white;
+}
+#bloque3 {
+float:left;
+width:116px;
+height:20px;
+margin:0px 0px 2px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:center;
+}
+#bloque3 p{
+padding:1px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:20px;
+font-size:15px;
+text-align:center;
+font-weight:bold;
+color:white;
+}
+#bloque4 {
+float:left;
+width:153px;
+height:20px;
+margin:0px 0px 2px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:center;
+}
+#bloque4 p{
+padding:1px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:20px;
+font-size:15px;
+text-align:center;
+font-weight:bold;
+color:white;
+}
+#bloque5 {
+float:left;
+width:75px;
+height:20px;
+margin:0px 0px 2px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:center;
+}
+#bloque5 p{
+padding:1px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+color:white;
+height:20px;
+font-size:15px;
+text-align:center;
+font-weight:bold;
+color:white;
+}
+
+/*--NUEVO MENU------------------------------------------------------------------------------*/
+
+#linea{
+padding:0px 0px 0px 0px;
+margin:1px 0px 0px 0px;
+width:1000px;
+height:25px;
+background-color:#0070c0;
+color:white;
+}
+#b1{
+float:left;
+width:150px;
+padding:2px 0px 0px 0px;
+margin:0px 0px 0px 5px;
+height:25px;
+color:white;
+font-size:15px;
+}
+#b1 a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+#b1 a:hover{
+color:orange;
+text-decoration:none;
+font-weight:bold;
+}
+
+#b2{
+float:right;
+width:150px;
+padding:2px 0px 0px 0px;
+margin:0px 0px 0px 5px;
+height:25px;
+color:white;
+font-size:15px;
+}
+#b2 a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+#b2 a:hover{
+color:orange;
+text-decoration:none;
+font-weight:bold;
+}
+
+/*   ENCABEZADO CON LA IMAGEN---------------------------------------------------------------------------*/
+
+#encabezadologin{
+background-color:#3b5998; /*#c90103;*/
+margin:0px 0px 6px 0px;
+padding:0px 0px 0px 0px;
+height:71px;
+width:1000px;
+}
+#astdes{
+width:600px;
+height:30px;
+margin:0px 5px 0px 300px;
+padding:20px 0px 0px 0px;
+}
+#astdes p{
+font-size:31px;
+color:white;
+margin:0px 0px 0px 0px;
+padding:10px 0px 0px 0px;
+font-family:Arial;
+}
+
+#logo{
+float:left;
+width:225px;
+height:78px;
+background-color:transparent;
+margin:0px 0px 0px 7px;
+padding:0px 0px 0px 0px;
+}
+#logoimagen{
+margin:0px 0px 3px 4px;
+padding:0px 0px 0px 0px;
+height:60px;
+width:221px;
+}
+#logoimagen img {
+margin:5px 0px 0px 20px;
+padding:0px 0px 0px 0px;
+width:140px;
+height:39px;
+border-radius:10px;
+}
+
+#textologo{
+margin:-16px 0px 0px 7px;
+padding:0px 0px 0px 0px;
+width:190px;
+height:11px;
+text-align:center;
+
+}
+#textologo p{
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+font-family:Arial;
+color:white;
+font-size:13px;
+width:auto;
+}
+
+/*MENSAJE PARA EL AREA DE MDIFICAR AST*/
+#salida{
+width:1000px;
+height:28px;
+text-align:left;
+margin-bottom:1px;
+margin-top: 6px;
+padding:0px 0px 0px 0px;
+background-color:#3b5998; /*#0070c0;*/
+}
+#salida p {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+text-align:left;
+font-size:14px;
+color:white;
+width:300px;
+height:28px;
+font-weight:bold;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* color como verde    eaf396
+color naranja       f3c872
+color morado        d8d8d8*/
+
+
+#contenedorlogin {
+position: relative;
+margin-left: auto;
+margin-right:auto;
+margin-top: 1px;
+padding: 0px 0px 0px 0px;
+background-color:#EFF3FB;
+width:400px;
+height:auto;
+border-radius: 10px;
+box-shadow: 0 6px 8px -4px black;
+
+}
+#cajas{
+margin:25px 0px 5px 0px;
+padding:0px 0px 0px 0px;
+width:400px;
+height:24px;
+}
+#cajasbotom{
+margin:25px 0px 15px 0px;
+padding:0px 0px 0px 0px;
+width:400px;
+height:45px;
+}
+#cajas p{
+font-size:18px;
+color:red;
+text-align:center;
+font-family:"Arial Black";
+}
+#encabezado {
+background-color:#507CD1;
+font-size:15px;
+margin:0px 0px 5px 0px;
+text-align:center;
+width:400px;
+height:29px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+#encabezado p{
+padding:5px;
+font-size:18px;
+color:white;
+text-align:center;
+}
+#textos{
+margin:0px 0px 0px 50px;
+padding:0px 0px 0px 0px;
+width:27%;
+height:24px;
+}
+#textos p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+font-size:15px;
+color:black;
+text-align:right;
+}
+#inputtex{
+float:right;
+margin:0px 40px 0px 2px;
+padding:0px 0px 0px 0px;
+width:47%;
+height:20px;
+}
+#inputtex input{
+width:160px;
+height:16px;
+font-size:13px;
+}
+
+#inputbotom{
+float:none;
+margin:5px 40px 0px 227px;
+padding:0px 0px 0px 0px;
+width:110px;
+height:30px;
+}
+#inputbotom input{
+width:110px;
+height:30px;
+}
+
+
+#cajas2{
+margin:13px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:500px;
+height:24px;
+}
+#cajas2 p{
+font-size:18px;
+color:red;
+text-align:center;
+font-family:"Arial Black";
+}
+#radiotex1{
+float:right;
+margin:0px 38px 0px 2px;
+padding:0px 0px 0px 0px;
+width:44%;
+height:20px;
+}
+
+#radiotex2{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:5%;
+height:19px;
+}
+#textradio{
+margin:-20px 0px 0px 30px;
+padding:0px 0px 0px 0px;
+width:70%;
+height:19px;
+}
+#textradio p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+font-size:13px;
+color:black;
+text-align:right;
+font-weight: normal;
+text-align:left;
+}
+
+#textos{
+margin:0px 0px 0px 30px;
+padding:0px 0px 0px 0px;
+width:40%;
+height:24px;
+font-weight: normal;
+}
+#textos p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+font-size:13px;
+color:black;
+text-align:right;
+font-weight: normal;
+}
+
+
+.fila tr:hover td{
+
+/*-------------------------DEGRADADO CELESTE--------------------------------------------------------------------------*/
+background: rgb(183,222,237);
+background: -moz-linear-gradient(top,  rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(183,222,237,1)), color-stop(50%,rgba(113,206,239,1)), color-stop(51%,rgba(33,180,226,1)), color-stop(100%,rgba(183,222,237,1)));
+background: -webkit-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); 
+background: -o-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); 
+background: -ms-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); 
+background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); 
+
+/*---------------------------------------------------------------------------------------------------*/
+
+}
+
+
+
+
+
+/************************************************************************************************************************/
+/*######################################################################################################################*/
+/************************************************************************************************************************/
+/* estilo para los mostrar */
+
+.par-seleccionado{
+	color:blue;
+	/* background-color:#A2B5CD; */
+	
+	/*-------------------------DEGRADADO VERDE--------------------------------------------------------------------------*/
+
+	background: rgb(210,255,82); 
+	background: -moz-linear-gradient(top,  rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(210,255,82,1)), color-stop(100%,rgba(145,232,66,1))); 
+	background: -webkit-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: -o-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: -ms-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: linear-gradient(to bottom,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 );
+	
+	
+	/*---------------------------------------------------------------------------------------------------*/
+}
+
+.impar-seleccionado{
+	color:blue;
+	/* background-color:#E3E3E3; */
+	
+	
+	/*-------------------------DEGRADADO VERDE--------------------------------------------------------------------------*/
+	background: rgb(210,255,82); 
+	background: -moz-linear-gradient(top,  rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(210,255,82,1)), color-stop(100%,rgba(145,232,66,1))); 
+	background: -webkit-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: -o-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: -ms-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: linear-gradient(to bottom,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 );
+	/*---------------------------------------------------------------------------------------------------*/
+
+}
+
+.par{
+	background-color:#A2B5CD;
+}
+
+.impar{
+	background-color:#E3E3E3;
+}
+
+
+
+/*########################################################################################################################################################*/
+/*########################################################################################################################################################*/
+/*########################################################################################################################################################*/
+/*########################################################################################################################################################*/
+/*codigo para modificar*/
+
+
+.tipo-par{
+	color:blue;
+	background-color:#A2B5CD;
+}
+
+.tipo-impar{
+	color:blue;
+	background-color:#E3E3E3;
+}
+
+.seleccionado{	
+	/*-------------------------DEGRADADO VERDE--------------------------------------------------------------------------*/
+	background: rgb(210,255,82); 
+	background: -moz-linear-gradient(top,  rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(210,255,82,1)), color-stop(100%,rgba(145,232,66,1))); 
+	background: -webkit-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: -o-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: -ms-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: linear-gradient(to bottom,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 );
+	/*---------------------------------------------------------------------------------------------------*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,364 @@
+﻿
+body {
+font-weight: normal;
+font-style: normal;
+text-align: justify;
+font-family: Arial;
+line-height: 130%;
+color: black;
+margin-top: 6px;
+margin-left:auto;
+margin-right:auto;
+background-color:#f7f7f7;
+}
+
+#contenedor {
+position: relative;
+margin-left: auto;
+margin-right:auto;
+margin-top: 1px;
+padding: 0px 0px 10px 0px;
+background-color:#f7f7f7;  /*a0a0a0;   /*#878787;*/
+width:1000px;
+height:auto;
+box-shadow: 0 6px 10px -4px black;
+}
+#contenedor table{
+width:650px;
+margin-top:0px;
+margin-left:auto;
+margin-right:auto;
+color:black;
+font-size:14px;
+}
+td{
+padding-left:2px;
+}
+#encabezado{
+/*background-color:#3b5998; /*#c90103;*/
+margin:0px 0px 20px 0px;
+padding:0px 0px 0px 0px;
+height:91px;
+width:1000px;
+}
+
+#logo{
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:225px;
+height:88px;
+background-color:#3b5998;
+}
+#logoimagen{
+margin:0px 0px 3px 17px;
+padding:0px 0px 0px 0px;
+height:90px;
+width:202px;
+}
+#logoimagen img {
+margin:5px 0px 0px 20px;
+padding:0px 0px 0px 0px;
+width:150px;
+height:59px;
+border-radius:10px;
+}
+#textologo{
+margin:-26px 0px 0px 15px;
+padding:0px 0px 0px 0px;
+width:190px;
+height:21px;
+text-align:center;
+}
+#textologo p{
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+font-family:Arial;
+color:white;
+font-size:14px;
+width:auto;
+}
+
+#descripcion{
+float:left;
+margin:0px 0px 0px 3px;
+padding:0px 0px 0px 0px;
+width:769px;
+height:88px;
+background-color:#f7f7f7;
+}
+#caja{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:769px;
+height:26px;
+background-color:#3b5998;
+}
+#caja p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:center;
+height:26px;
+width:769px;
+font-size:20px;
+}
+#caja4{
+margin:2px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:769px;
+height:31px;
+background-color:#3b5998;
+}
+#caja4 p{
+margin:2px 0px 0px 0px;
+padding:4px 0px 0px 0px;
+color:white;
+text-align:center;
+height:27px;
+width:769px;
+font-size:17px;
+}
+#caja2{
+margin:2px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:769px;
+height:26px;
+background-color:#3b5998;
+}
+#caja2 p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:center;
+height:26px;
+width:769px;
+font-size:17px;
+}
+#caja3{
+float:left;
+margin:0px 0px 0px 10px;
+padding:0px 0px 0px 0px;
+width:370px;
+height:26px;
+background-color:#3b5998;
+}
+#caja3 p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+color:white;
+text-align:center;
+height:26px;
+width:370px;
+font-size:16px;
+}
+/*DISENO PARA EL FRAME QUE GUARDARA LOS GRAFICOS---------------------------------------------------*/
+#grafico{
+margin-top:10px;
+margin-left:10px;
+margin-right:auto;
+padding:0px 0px 0px 0px;
+width:600px;
+height:auto;
+}
+
+
+#grafico2{
+margin-top:10px;
+margin-left:auto;
+margin-right:auto;
+padding:0px 0px 0px 0px;
+width:985px;
+height:auto;
+}
+
+
+/*DISENO PARA EL VERDADERO CONSOLIDADO DE MES-------------------------------------------------------*/
+
+#consolidado{
+width:800px;
+height:auto;
+margin:10px 0px 20px 0px;
+padding:0px 0px 0px 0px;
+background-color:transparent;
+margin-left:auto;
+margin-right:auto;
+}
+#colaboradores{
+float:left;
+width:200px;
+height:auto;
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+}
+#colaboradores table{
+margin:0px 0px 10px 0px;
+padding:0px 0p 0px 0px;
+width:200px;
+height:auto;
+}
+#actividades{
+float:left;
+width:300px;
+height:auto;
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+}
+#actividades table{
+margin:0px 0px 10px 0px;
+padding:0px 0p 0px 0px;
+width:300px;
+height:auto;
+}
+#empresas{
+float:left;
+width:300px;
+height:auto;
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+}
+#empresas table{
+margin:0px 0px 20px 0px;
+padding:0px 0p 0px 0px;
+width:300px;
+height:auto;
+}
+
+
+/*ESTILO PARA REPORTE EMPRESAS,ACTIVIDADES,AREAS-----------------------------------------------------------------*/
+
+#box0{
+margin:20px 0px 0px 0px;
+padding:0px 0p 0px 0px;
+width:1000px;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+}
+#box01{
+margin:0px 0px 0px 0px;
+padding:0px 0p 0px 0px;
+width:700px;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+}
+#box01 table {
+margin:0px 0px 0px 0px;
+padding:0px 0p 0px 0px;
+width:700px;
+}
+#box1{
+margin:0px 0px 0px 0px;
+padding:0px 0p 0px 0px;
+width:700px;
+height:25px;
+background-color:#3b5998;
+margin-left:auto;
+margin-right:auto;
+}
+#box2{
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0p 0px 0px;
+width:230px;
+height:25px;
+}
+#box2 p {
+margin:0px 0px 0px 0px;
+padding:4px 0p 0px 0px;
+width:230px;
+height:25px;
+font-size:17px;
+color:white;
+text-align:center;
+font-weight:bold;
+}
+#box3{
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0p 0px 0px;
+width:230px;
+height:25px;
+}
+#box3 p {
+margin:0px 0px 0px 0px;
+padding:4px 0p 0px 0px;
+width:230px;
+height:25px;
+font-size:17px;
+color:white;
+text-align:center;
+font-weight:bold;
+}
+#box4{
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0p 0px 0px;
+width:200px;
+height:25px;
+}
+#box4 p {
+margin:0px 0px 0px 0px;
+padding:4px 0p 0px 0px;
+width:200px;
+height:25px;
+font-size:17px;
+color:white;
+text-align:center;
+font-weight:bold;
+}
+#box5{
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0p 0px 0px;
+width:40px;
+height:25px;
+}
+#box5 p {
+margin:0px 0px 0px 0px;
+padding:4px 0p 0px 0px;
+width:40px;
+height:25px;
+font-size:17px;
+color:white;
+text-align:center;
+font-weight:bold;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+#complemento {
+	width:770px;
+	height:auto;
+	margin:15px 0px 0px 0px;
+	padding:0px 0px 0px 0xp;
+	background-color:transparent;
+}
+
+#datossss {
+    float:left;
+	width:192px;
+	height:20px;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	background-color:transparent;
+
+}
+
+#datossss p {
+	width:192px;
+	height:20px;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	text-align:left;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:transparent;
+
+}
+

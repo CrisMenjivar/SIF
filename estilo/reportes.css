@@ -1,0 +1,556 @@
+
+/* ESTILO PARA LOS USUARIOS---------------------------------------------------------------------*/
+#reporte{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:998px;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+}
+#reporte2{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:998px;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+font-size:11px;
+}
+
+#reporte tabla{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:998px;
+font-size:10px;
+text-align:center;
+}
+
+#columnas{
+background-color:#3b5998;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:998px;
+height:25px;
+}
+#col1{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col1 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col2{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col2 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col3{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col3 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col4{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col4 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col5{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col5 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col6{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col6 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col7{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col7 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col8{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col8 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col9{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col9 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col10{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col10 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+#col11{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+float:left;
+}
+#col11 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:90px;
+height:25px;
+text-align:center;
+color:white;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*-- ESTILO PARA REPORTE PROYECTOS-------------------------------------------------------------*/
+
+#proyec{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:998px;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+}
+#opciones{
+background-color:#3b5998;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:998px;
+height:25px;
+}
+#blo1 {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:105px;
+}
+#blo1 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:100px;
+height:25px;
+text-align:center;
+color:white;
+}
+#blo2 {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:264px;
+}
+#blo2 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:264px;
+height:25px;
+text-align:center;
+color:white;
+}
+#blo3{
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:107px;
+}
+#blo3 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+text-align:center;
+color:white;
+width:107px;
+}
+#blo4 {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:58px;
+}
+#blo4 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+text-align:center;
+color:white;
+width:58px;
+}
+#blo5 {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:113px;
+}
+#blo5 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+text-align:center;
+color:white;
+width:113px;
+}
+#blo6 {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:90px;
+}
+#blo6 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+text-align:center;
+color:white;
+width:90px;
+}
+#blo7 {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:100px;
+}
+#blo7 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+text-align:center;
+color:white;
+width:100px;
+}
+#blo8 {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:90px;
+}
+#blo8 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+text-align:center;
+color:white;
+width:90px;
+}
+#blo9 {
+float:left;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+width:68px;
+}
+#blo9 p {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height:25px;
+text-align:center;
+color:white;
+width:68px;
+}
+
+
+#seleccionar{
+margin:-20px 0px 80px 0px;
+padding:0px 0px 0px 0px;
+width:988px;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+}
+
+#seleccionar1{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:334px;
+height:auto;
+float:left;
+}
+#seleccionar11{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:134px;
+height:auto;
+float:left;
+}
+#seleccionar11 p{
+margin:20px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:134px;
+height:20px;
+float:left;
+text-align:right;
+font-weight:normal;
+}
+
+#seleccionar12{
+margin:20px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:180px;
+height:20px;
+float:left;
+}
+
+#seleccionar12 select{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:180px;
+height:20px;
+
+}
+
+
+#seleccionar2{
+margin:0px 90px 0px 0px;
+padding:0px 0px 0px 0px;
+width:639px;
+height:auto;
+float:left;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+#filtro{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:988px;
+height:42px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#filtro1{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:247px;
+height:auto;
+float:left;
+margin-left:auto;
+margin-right:auto;
+}
+#filtro11{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:123px;
+height:auto;
+float:left;
+margin-left:auto;
+margin-right:auto;
+}
+#filtro11 p{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:auto;
+height:auto;
+text-align:right;
+font-weight:normal;
+}
+
+#filtro12{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:123px;
+height:auto;
+float:left;
+margin-left:auto;
+margin-right:auto;
+}
+#filtro12 select{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:110px;
+height:20px;
+
+}
+
+#filtro12 input{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:110px;
+height:20px;
+text-align:center;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+#selecuser{
+margin:0px 0px 20px 0px;
+padding:0px 0px 0px 0px;
+width:988px;
+height:40px;
+}
+
+#prt1{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:639px;
+height:40px;
+float:left;
+}
+#prt1 p{
+margin:0px 0px 0px 0px;
+padding:8px 0px 0px 0px;
+width:639px;
+height:32px;
+text-align:right;
+font-size:23px;
+font-weight:bold;
+}
+
+#prt2{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:334px;
+height:40px;
+float:left;
+}
+
+#prt21 {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:134px;
+height:40px;
+float:left;
+}
+#prt21 p{
+margin:0px 0px 0px 0px;
+padding:10px 0px 0px 0px;
+width:134px;
+height:30px;
+text-align:right;
+font-weight:bold;
+}
+
+#prt22{
+margin:0px 0px 0px 0px;
+padding:10px 0px 0px 0px;
+width:180px;
+height:30px;
+float:left;
+}
+
+#seleccionar12 select{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+width:180px;
+height:20px;
+
+}
+
+
+
+
+
