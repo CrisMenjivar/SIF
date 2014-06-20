@@ -1154,7 +1154,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 
 
-
+#logueado{
+	width:1000px;
+	height:15px;
+	color:black;
+	font-size:12px;
+	text-align:left;
+}
 
 
 

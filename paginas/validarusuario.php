@@ -45,13 +45,6 @@ if($fila['estado']=="a")
 {
 session_start();
 $_SESSION['user']=$login;
-//sesiones para usar en graficos
-/*
-$_SESSION['grafico_servidor']=$servidor;
-$_SESSION['grafico_usuario']=$usuario;
-$_SESSION['grafico_pass']=$contra;
-$_SESSION['grafico_bd']=$nombre_bd;
-*/
 
 //variables para el excel----------
 $_SESSION['fecha']="";

@@ -14,16 +14,6 @@
 <?php
 include 'config/db.php';
 
-//guardar la conexion realizada al servidor de bases de datos en una variable
-$conexion=mysql_connect($servidor,$usuario,$contra) or die(mysql_error());
-
-//verificar si la conexion se realizo con exito
-if(!$conexion)
-{
-die("No se pudo conectar");
-}
-//Seleccionar la base de datos a las que nos conectaremos
-$bd=mysql_select_db($nombre_bd,$conexion) or die(mysql_error());
 
 //Verificamos que el usuario haya iniciado sesion
 session_start();

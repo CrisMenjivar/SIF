@@ -68,6 +68,7 @@ $pendientes=$resP2['tot'];
 ?>
 
 <div id="contenedor" style="height:100%;">
+<div id="logueado">Sesion actual : <?php echo $_SESSION['user']; ?></div>
 <div id="encabezadologin">
 <div id="logo">
 <div id="logoimagen">
