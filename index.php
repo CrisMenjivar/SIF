@@ -28,7 +28,7 @@ $bd=mysql_select_db($nombre_bd,$conexion) or die(mysql_error());
 
 //Verificamos que el usuario haya iniciado sesion
 session_start();
-if(@$_SESSION['user']!="") //colocamos arroba para evitar que se despliege error por si la variable no a sido creada
+if(isset($_SESSION['user'])) //colocamos arroba para evitar que se despliege error por si la variable no a sido creada
 {
 
 $sql="select * from usuarios where user='".$_SESSION['user']."' ";
@@ -79,7 +79,7 @@ header ("Location: paginas/jefes/ast.php");
 
 <div id="cajas" >
 <div id="inputtex">
-<input type="text" style="box-shadow: 0 1px 2px -2px black;"  name="usuario" value="" />
+<input type="text" style="box-shadow: 0 1px 2px -2px black;"  name="usuario" value="" maxlength="25" />
 
 </div>
 <div id="textos">
@@ -89,7 +89,7 @@ header ("Location: paginas/jefes/ast.php");
 
 <div id="cajas">
 <div id="inputtex">
-<input type="password" style="box-shadow: 0 1px 2px -2px black;"  name="pass" value="" />
+<input type="password" style="box-shadow: 0 1px 2px -2px black;"  name="pass" value="" maxlength="20" />
 
 </div>
 <div id="textos">

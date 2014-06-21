@@ -28,8 +28,6 @@ die("No se pudo conectar");
 //Seleccionar la base de datos a las que nos conectaremos
 $bd=mysql_select_db($nombre_bd,$conexion) or die(mysql_error());
 
-//$con = mysql_connect('localhost','root');
-//mysql_select_db('registroast',$con);
 
 session_start();
 $op="pc";
@@ -45,6 +43,7 @@ if($fila['estado']=="a")
 {
 session_start();
 $_SESSION['user']=$login;
+$_SESSION['tiempo']= time();
 
 //variables para el excel----------
 $_SESSION['fecha']="";
