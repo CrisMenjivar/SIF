@@ -110,18 +110,26 @@ header ("Location: paginas/jefes/ast.php");
 $errorDato="";
 
 
+
 if( isset( $_SESSION['error'] ) )
 {
-if($_SESSION['error']=="tres")
-{
-$errorDato="Su cuenta de usuario fue cancelada, Por favor comuniquese con el administrador para activarla";
+	if($_SESSION['error']=="tres")
+	{
+	$errorDato="Su cuenta de usuario fue cancelada, Por favor comuniquese con el administrador para activarla";
+	}
+	if($_SESSION['error']=="uno")
+	{
+	$errorDato="Usuario o contrase&ntilde;a no v&aacute;lida, por favor verificar.";
+	}
+	if($_SESSION['error']=="cuatro")
+	{
+	$errorDato="Login bloqueado 5 minutos por exceso de errores en inicio de sesion";
+	}
+	unset( $_SESSION['error'] );
 }
-if($_SESSION['error']=="uno")
-{
-$errorDato="Usuario o contrase&ntilde;a no v&aacute;lida, por favor verificar.";
-}
-session_unset( $_SESSION['error'] );
-}
+
+
+
 ?>
 <center><br/><br/><?php echo $errorDato; ?></center>
 </div>
