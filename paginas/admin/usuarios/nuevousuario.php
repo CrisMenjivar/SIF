@@ -2,8 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+<script language="javascript" type="text/javascript" src="../../../js/horas/jquery-1.7.1.min.js"></script>
 <script language="javascript" type="text/javascript" src="../../../js/formularios.js"></script>
 <script language="javascript" type="text/javascript" src="../../../js/seguridad.js"></script>
+<script language="javascript" type="text/javascript" src="../../../js/password_checker.js"></script>
 <link href="../../../estilo/estiloformularios.css" rel="stylesheet" type="text/css" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Nuevo Usuario</title>
@@ -320,7 +322,7 @@ echo '<li><a href="../ast/ast_excel.php" >Pendientes ('; echo $pendientes; echo 
 
 <div id="cajas" >
 <div id="inputtex">
-<input type="text"  name="pass" value="" style="box-shadow: 0 1px 2px -2px black;" />
+<input type="text"  name="pass" id="pass" value="" style="box-shadow: 0 1px 2px -2px black;" />
 
 </div>
 <div id="textos">
@@ -330,11 +332,16 @@ echo '<li><a href="../ast/ast_excel.php" >Pendientes ('; echo $pendientes; echo 
 
 <div id="cajas" >
 <div id="inputtex">
-<input type="text"  name="confirmar" value="" style="box-shadow: 0 1px 2px -2px black;" />
+<input type="text"  name="confirmar" id="confirmar "value="" style="box-shadow: 0 1px 2px -2px black;" />
 
 </div>
 <div id="textos">
 <p><b> Confirmar contrase&ntilde;a :</b></p>
+</div>
+</div>
+
+<div id="cajas">
+<div id="pass-info">
 </div>
 </div>
 
