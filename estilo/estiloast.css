@@ -857,16 +857,16 @@ height:71px;
 width:1000px;
 }
 #astdes{
-width:600px;
-height:30px;
-margin:0px 5px 0px 300px;
-padding:20px 0px 0px 0px;
+width:714px;
+height:50px;
+margin:0px 5px 0px 280px;
+padding:0px 0px 0px 0px;
 }
 #astdes p{
 font-size:31px;
 color:white;
 margin:0px 0px 0px 0px;
-padding:10px 0px 0px 0px;
+padding:0px 0px 0px 0px;
 font-family:Arial;
 }
 
@@ -1189,6 +1189,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 
 
+.logueado{
+	height:20px !important;
+	font-size:12px !important;
+	padding:0px 0px 0px 0px !important;
+	margin:0px 0px 5px 0px !important;
+	text-align:right !important;
+	width:709px !important;
+	text-decoration:underline !important;
+}
 
 
 
