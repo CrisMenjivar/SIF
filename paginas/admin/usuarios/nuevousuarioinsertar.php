@@ -77,7 +77,7 @@ $contra=$pass;
 $pass=hash_hmac('md5', $pass, 'ast');
 
 $nombre=$_POST['nombre'];
-
+$email=$_POST['email'];
 $apellido=$_POST['apellido'];
 
 $cargo=$_POST['cargo'];
@@ -89,7 +89,7 @@ $contrato=ucfirst($contrato);
 $proveedor=$_POST['proveedor'];
 $proveedor=strtoupper($proveedor);
 
-$sqlinsertar="INSERT INTO  registroast.usuarios (user ,admin ,nombre ,apellido ,area ,subarea,ccosto,pass,puesto ,contrato ,empresa ,proveedor ,estado,creado) VALUES ('$login',  '$acceso',  '$nombre',  '$apellido',  '$area', '$subarea', '$ccosto','$pass','$cargo',  '$contrato',  '$empresa',  '$proveedor',  'a','$creado')";
+$sqlinsertar="INSERT INTO  registroast.usuarios (user ,admin ,nombre ,apellido ,area ,subarea,ccosto,pass,puesto ,contrato ,empresa ,proveedor ,estado,creado, email) VALUES ('$login',  '$acceso',  '$nombre',  '$apellido',  '$area', '$subarea', '$ccosto','$pass','$cargo',  '$contrato',  '$empresa',  '$proveedor',  'a','$creado', '$email')";
 
 if( mysql_query($sqlinsertar,$conexion) )
 {

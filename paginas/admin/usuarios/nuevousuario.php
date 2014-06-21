@@ -289,7 +289,7 @@ echo '<li><a href="../ast/ast_excel.php" >Pendientes ('; echo $pendientes; echo 
 <div id="inputtex2" >
 <input type="text"  name="login" value="" style="box-shadow: 0 1px 2px -2px black;" pattern="[a-zA-Z0-9\s_-]{10,15}$"/>
 </div>
-<div id="c2"><p>@siman.com</p></div>
+<div id="c2"></div>
 </div>
 
 <div id="textos" style="width: 28%">
@@ -492,16 +492,15 @@ echo "<option value=".$code.">".$code." - ".$mos."</option>";
 <p><b> Proveedor :</b></p>
 </div>
 </div>
-<!--
+<
 <div id="cajas" >
 <div id="inputtex">
-<input type="text"  name="correo" value="" />
+<input type="text"  name="email" value="" />
 </div>
 <div id="textos">
 <p><b> Correo electronico :</b></p>
 </div>
 </div>
--->
 
 <div id="cajasbotom">
 <div id="inputbotom">
