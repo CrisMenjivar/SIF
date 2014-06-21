@@ -173,6 +173,7 @@ $num=$res['tot'];
 </div>
 </div>
 <div id="astdes">
+<p class="logueado">Bienvenido : <?php echo $_SESSION['user']; ?></p>
 <p>An&aacute;lisis Semanal de Tiempo -- AST</p>
 </div>
 </div>
