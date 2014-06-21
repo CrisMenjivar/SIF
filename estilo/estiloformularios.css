@@ -95,6 +95,25 @@ width:auto;
 
 
 
+#errorNombre{
+	color: #D8000C;
+	margin-top:5px;
+	background-color: #FFBABA;
+	font-size:12px;
+	border-radius:5px;
+
+}
+
+#confirmarNombre{
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	margin-top:15px;
+	font-size:12px;
+	border-radius:5px;
+
+}
+
+
 /*barra de menus--------------------------------------------------------------------------------------------- */
 
 #conteencabezado{
