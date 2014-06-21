@@ -1,5 +1,5 @@
 <?php
-    $servidor="localhost"; $usuario="registroast"; $contra="registroast"; $nombre_bd="registroast";
+    $servidor="localhost"; $usuario="usersif"; $contra="usersif"; $nombre_bd="bdastsif";
     //$conexion=mysqli_connect($servidor, $usuario, $contra, $nombre_bd);
     
     session_start();

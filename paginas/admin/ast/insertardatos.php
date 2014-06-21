@@ -70,7 +70,7 @@ $respuesta=$res['total'];
 if( $respuesta == 0 )
 {
 
-$sql="INSERT INTO registroast.ast (usuario,fecha,descripcion,tipoact,empresa,cproyecto,inicio,fin,totalhoras,estado) VALUES ('$user', '$fecha', '$descripcion', '$actividad', '$empresa', '$proyecto', '$inicio', '$finales', '$horas', 'a')";
+$sql="INSERT INTO ast (usuario,fecha,descripcion,tipoact,empresa,cproyecto,inicio,fin,totalhoras,estado) VALUES ('$user', '$fecha', '$descripcion', '$actividad', '$empresa', '$proyecto', '$inicio', '$finales', '$horas', 'a')";
 
 if( mysql_query($sql,$conexion) )
 {
