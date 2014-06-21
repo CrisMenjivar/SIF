@@ -102,7 +102,6 @@ function validar_apellido(campo)
    	 document.getElementById('confirmarNombre').innerHTML = '';           	 
     }
 }
-
 </script>
 </head>
 <body>
@@ -157,16 +156,16 @@ $pendientes=$resP2['tot'];
 			</div>
 			<div id="textologo">
 				<p>
-					Shared IT Enterprise Services
+					 Shared IT Enterprise Services
 				</p>
 			</div>
 		</div>
 		<div id="astdes">
 			<p class="logueado">
-				Bienvenido : <?php echo $_SESSION['user']; ?>
+				 Bienvenido : <?php echo $_SESSION['user']; ?>
 			</p>
 			<p>
-				An&aacute;lisis Semanal de Tiempo -- AST
+				 An&aacute;lisis Semanal de Tiempo -- AST
 			</p>
 		</div>
 	</div>
@@ -188,7 +187,7 @@ if( $pendientes != 0 )
 {
 echo '<li>
 					<a href="../ast/ast_excel.php">Pendientes ('; echo $pendientes; echo ')</a></li>
-					'; } ?>
+					 '; } ?>
 					<li><a href="../control/control.php">Control de entregas AST</a></li>
 					<li><a href="../../cerrarsesion.php">Cerrar sesi&oacute;n</a></li>
 				</ul>
@@ -276,7 +275,7 @@ echo '<li>
 		<form name="sesiones" id="sesiones" action="nuevousuarioinsertar.php" method="post" onsubmit="return validarusuario(this)">
 			<div id="encabezado">
 				<p>
-					Agregar nuevo usuario
+					 Agregar nuevo usuario
 				</p>
 			</div>
 			<div id="cajas">
@@ -292,7 +291,7 @@ echo '<li>
 				</div>
 				<div id="textos" style="width: 28%">
 					<p style="width: 158px">
-						Login de usuario<b> :</b>
+						 Login de usuario<b> :</b>
 					</p>
 				</div>
 			</div>
@@ -303,13 +302,13 @@ echo '<li>
 					</div>
 					<div id="textradio">
 						<p>
-							Administrador
+							 Administrador
 						</p>
 					</div>
 				</div>
 				<div id="textos">
 					<p>
-						Nivel de acceso :
+						 Nivel de acceso :
 					</p>
 				</div>
 			</div>
@@ -320,7 +319,7 @@ echo '<li>
 					</div>
 					<div id="textradio">
 						<p>
-							Usuario
+							 Usuario
 						</p>
 					</div>
 				</div>
@@ -337,7 +336,7 @@ echo '<li>
 					</div>
 					<div id="textradio">
 						<p>
-							Jefe de &aacute;rea
+							 Jefe de &aacute;rea
 						</p>
 					</div>
 				</div>
@@ -354,7 +353,7 @@ echo '<li>
 					</div>
 					<div id="textradio">
 						<p>
-							Jefe de &aacute;rea-Admin
+							 Jefe de &aacute;rea-Admin
 						</p>
 					</div>
 				</div>
@@ -395,18 +394,17 @@ echo '<li>
 				</div>
 				<div id="textos">
 					<p>
-						Nombre<b> :</b>
+						 Nombre<b> :</b>
 					</p>
 				</div>
 			</div>
-			
 			<div id="cajas">
 				<div id="inputtex">
-					<input type="text" name="apellido" value="" style="box-shadow: 0 1px 2px -2px black;" onkeyup="validar_apellido(this)" />
+					<input type="text" name="apellido" value="" style="box-shadow: 0 1px 2px -2px black;" onkeyup="validar_apellido(this)"/>
 				</div>
 				<div id="textos">
 					<p>
-						Apellido :
+						 Apellido :
 					</p>
 				</div>
 			</div>
@@ -426,8 +424,8 @@ $name=$areass['nombre'];
 $name=strtolower($name);
 $name=ucfirst($name);
 echo "<option value=".$ari.">
-						".$ari." - ".$name."</option>
-						"; } ?>
+						 ".$ari." - ".$name."</option>
+						 "; } ?>
 					</select>
 				</div>
 				<div id="textos">
@@ -469,8 +467,8 @@ $mos=strtr($mos,'_',' ');
 $mos=strtolower($mos);
 $mos=ucwords($mos);
 echo "<option value=".$code.">
-						".$code." - ".$mos."</option>
-						"; } ?>
+						 ".$code." - ".$mos."</option>
+						 "; } ?>
 					</select>
 				</div>
 				<div id="textos">
@@ -485,7 +483,7 @@ echo "<option value=".$code.">
 				</div>
 				<div id="textos">
 					<p>
-						Cargo<b> :</b>
+						 Cargo<b> :</b>
 					</p>
 				</div>
 			</div>
@@ -514,16 +512,16 @@ echo "<option value=".$code.">
 					</p>
 				</div>
 			</div>
-
-			<div id="cajas" >
+			<div id="cajas">
 				<div id="inputtex">
-					<input type="text"  name="correo" value="" />
+					<input type="email" name="correo" value=""/>
 				</div>
 				<div id="textos">
-					<p><b> Correo electronico :</b></p>
+					<p>
+						<b> Correo electronico :</b>
+					</p>
 				</div>
 			</div>
-			
 			<div id="errorNombre">
 			</div>
 			<div id="ConfirmarNombre">
