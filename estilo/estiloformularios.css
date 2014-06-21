@@ -953,4 +953,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 }
 
+.logueado{
+	height:20px !important;
+	font-size:12px !important;
+	padding:0px 0px 0px 0px !important;
+	margin:0px 0px 5px 0px !important;
+	text-align:right !important;
+	width:709px !important;
+	text-decoration:underline !important;
+}
+
 
