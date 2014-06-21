@@ -8,12 +8,13 @@
 <body>
 
 <?php
-$login= $_POST['usuario'];
+$login= mysql_real_escape_string($_POST['usuario']);
 $login=strtolower($login);
 $login=strtr($login,' ','_');
-$clave = $_POST['pass'];
+$clave = mysql_real_escape_string($_POST['pass']);
 $clave = strtolower($clave);
 $clave=hash_hmac('md5', $clave, 'ast');
+
 
 include '../config/db.php';
 

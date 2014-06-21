@@ -2,25 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+<script language="javascript" type="text/javascript" src="../../js/horas/jquery-1.7.1.min.js"></script>
 <script language="javascript" type="text/javascript" src="../../js/formularios.js"></script>
-
 <script language="javascript" type="text/javascript" src="../../js/seguridad.js"></script>
-
 <script language="javascript" type="text/javascript" src="../../js/astnuevos.js"></script>
+<script language="javascript" type="text/javascript" src="../../js/horas/jquery-ui-1.10.4.custom.min.js"></script>
+<script language="javascript" type="text/javascript" src="../../js/horas/datepicker-es.js"></script>
 <link href="../../estilo/estiloformularios.css" rel="stylesheet" type="text/css" />
 <link href="../../estilo/estiloast.css" rel="stylesheet" type="text/css" />
+<link href="../../estilo/flick/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Modificar AST</title>
-
-<!--Hoja de estilos del calendario --------------------------------------------------------------------->
-<link rel="stylesheet" type="text/css" media="all" href="../../js/calendario/calendar-blue2.css" title="win2k-cold-1" />
-<!-- librería principal del calendario -->
-<script type="text/javascript" src="../../js/calendario/calendar.js"></script>
-<!-- librería para cargar el lenguaje deseado -->
-<script type="text/javascript" src="../../js/calendario/lang/calendar-es.js"></script>
-<!-- librería que declara la función Calendar.setup, que ayuda a generar un calendario en unas pocas líneas de código -->
-<script type="text/javascript" src="../../js/calendario/calendar-setup.js"></script>
-<!--Hoja de estilos del calendario --------------------------------------------------------------------->
 
 <script type="text/javascript" src="../../js/ajax.js">
 </script>
@@ -348,10 +340,6 @@ $total1 = $_SESSION['m_total'];
 <input type="text" name="fecha" id="campo_fecha" value="<?php echo $fecha1; ?>" <?php if($fecha1==""){echo 'disabled="disabled"';} ?> maxlength="10" onkeypress="return acceptNumhorasNada(event)"/>
 </div>
 
-<div id="calendario">
-<input type="image" src="../../imagenes/calendar.png" id="lanzador" alt="Calendario" <?php if($fecha1==""){echo 'disabled="disabled"';} ?> />
-</div>
-
 <div id="descritex" style="width: 341px" >
 <input type="text" name="descripcion" maxlength="58" value="<?php echo $descripcion1; ?>" style="width: 338px" <?php if($fecha1==""){echo 'disabled="disabled"';} ?> />
 </div>
@@ -497,11 +485,14 @@ echo '<div id="botonfinal1" style="height: 16px"><p style="height: 17px">&nbsp;&
 
 <!-- script que define y configura el calendario-->
 <script type="text/javascript">
-Calendar.setup({
-inputField     :    "campo_fecha",     // id del campo de texto
-ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto
-button     :    "lanzador"     // el id del botón que lanzará el calendario
-});
+$(function() {
+	$( "#campo_fecha" ).datepicker({
+	  defaultDate: "+1w",
+	  changeMonth: true,
+	  numberOfMonths: 1,
+	  dateFormat: 'yy-mm-dd',
+	});
+  });
 </script>
 
 

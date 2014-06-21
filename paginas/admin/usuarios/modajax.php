@@ -68,7 +68,7 @@ if($userast!="")
 <div id="inputtex2" >
 <input type="text"  name="login" value="<?php echo $datos['user']; ?>" />
 </div>
-<div id="c2"><p>@siman.com</p></div>
+<div id="c2"></div>
 </div>
 
 <div id="textos" style="width: 28%">
@@ -335,16 +335,15 @@ else
 </div>
 </div>
 
-<!--
+
 <div id="cajas" >
 <div id="inputtex">
-<input type="text"  name="correo" value="<?php //echo $datos['email']; ?>" />
+<input type="text"  name="correo" value="<?php echo $datos['email']; ?>" />
 </div>
 <div id="textos">
 <p><b> Correo electronico :</b></p>
 </div>
 </div>
--->
 
 <div id="cajasbotom">
 <div id="inputbotom">

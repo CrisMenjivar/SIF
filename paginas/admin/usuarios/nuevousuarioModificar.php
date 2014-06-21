@@ -371,7 +371,7 @@ echo "<option value=".$correlativos2.">".$correlativos2."</option>";
 <div id="inputtex2" >
 <input disabled="disabled" type="text"  name="login" value="" />
 </div>
-<div id="c2"><p>@siman.com</p></div>
+<div id="c2"></div>
 </div>
 
 <div id="textos" style="width: 28%">
@@ -577,6 +577,14 @@ echo "<option value=".$ari.">".$mos."</option>";
 </div>
 </div>
 
+<div id="cajas" >
+<div id="inputtex">
+<input type="text"  disabled="disabled" name="correo" value="" />
+</div>
+<div id="textos">
+<p><b> Correo electronico :</b></p>
+</div>
+</div>
 
 <div id="cajasbotom">
 <div id="inputbotom">
