@@ -6,6 +6,7 @@
 <script language="javascript" type="text/javascript" src="../../../js/formularios.js"></script>
 <script language="javascript" type="text/javascript" src="../../../js/seguridad.js"></script>
 <script language="javascript" type="text/javascript" src="../../../js/password_checker.js"></script>
+<script language="javascript" type="text/javascript" src="../../../js/horas/jquery.validate.min.js"></script>
 <link href="../../../estilo/estiloformularios.css" rel="stylesheet" type="text/css" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Nuevo Usuario</title>
@@ -18,6 +19,31 @@
 <script type="text/javascript" src="../../../js/ajax.js"></script>
 
 <script type="text/javascript">
+$(function() {
+	$("#sesiones").validate({
+		rules: {
+			pass: {
+				required: true,
+				pwcheck: true,
+				minlength: 8
+			}
+		},
+		messages: {
+			pass: {
+				required: "Password requerido",
+				pwcheck: "Password no válido.",
+				minlength: "Debe tener al menos 8 caracteres"
+			}
+		}
+	});
+
+	$.validator.addMethod("pwcheck", function(value) {
+	   return /^[A-Za-z0-9\d=!\-@._*]*$/.test(value) // consists of only these
+		   && /[a-z]/.test(value) // has a lowercase letter
+		   && /\d/.test(value) // has a digit
+	});
+});
+				
 objetoAjax.prototype.micompletar=micompletar;
 
 function micompletar(forma)
@@ -248,7 +274,7 @@ echo '<li><a href="../ast/ast_excel.php" >Pendientes ('; echo $pendientes; echo 
 <!--FIN DE LA BARRA DE MENU -->
 
 <div id="contenedorform">
-<form name="sesiones" action="nuevousuarioinsertar.php" method="post" onsubmit="return validarusuario(this)">
+<form name="sesiones" id="sesiones" action="nuevousuarioinsertar.php" method="post" onsubmit="return validarusuario(this)">
 <div id="encabezado">
 <p>Agregar nuevo usuario</p>
 </div>
@@ -261,7 +287,7 @@ echo '<li><a href="../ast/ast_excel.php" >Pendientes ('; echo $pendientes; echo 
 -->
 <div id="c1">
 <div id="inputtex2" >
-<input type="text"  name="login" value="" style="box-shadow: 0 1px 2px -2px black;" />
+<input type="text"  name="login" value="" style="box-shadow: 0 1px 2px -2px black;" pattern="[a-zA-Z0-9\s_-]{10,15}$"/>
 </div>
 <div id="c2"><p>@siman.com</p></div>
 </div>
@@ -323,17 +349,19 @@ echo '<li><a href="../ast/ast_excel.php" >Pendientes ('; echo $pendientes; echo 
 
 <div id="cajas" >
 <div id="inputtex">
-<input type="text"  name="pass" id="pass" value="" style="box-shadow: 0 1px 2px -2px black;" />
-
+<input type="text"  name="pass" id="pass" value="" style="box-shadow: 0 1px 2px -2px black;" maxlength="12"/>
 </div>
 <div id="textos">
 <p><b> Contrase&ntilde;a :</b></p>
 </div>
 </div>
+<br />
+<div id="error">
+</div>
 
 <div id="cajas" >
 <div id="inputtex">
-<input type="text"  name="confirmar" id="confirmar "value="" style="box-shadow: 0 1px 2px -2px black;" />
+<input type="text"  name="confirmar" id="confirmar "value="" style="box-shadow: 0 1px 2px -2px black;" pattern="[a-zA-Z0-9\s_-!#@&/?*]{8,12}$" />
 
 </div>
 <div id="textos">
