@@ -2,22 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<script language="javascript" type="text/javascript" src="../../../js/seguridad.js"></script>
+<script language="javascript" type="text/javascript" src="../../../js/horas/jquery-1.7.1.min.js"></script>
 <script language="javascript" type="text/javascript" src="../../../js/formularios.js"></script>
+<script language="javascript" type="text/javascript" src="../../../js/seguridad.js"></script>
 <script language="javascript" type="text/javascript" src="../../../js/astnuevos.js"></script>
+<script language="javascript" type="text/javascript" src="../../../js/horas/jquery-ui-1.10.4.custom.min.js"></script>
+<script language="javascript" type="text/javascript" src="../../../js/horas/datepicker-es.js"></script>
 <link href="../../../estilo/estiloformularios.css" rel="stylesheet" type="text/css" />
+<link href="../../../estilo/flick/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Nuevo Proyecto</title>
-
-<!--Hoja de estilos del calendario --------------------------------------------------------------------->
-<link rel="stylesheet" type="text/css" media="all" href="../../../js/calendario/calendar-blue2.css" title="win2k-cold-1" />
-<!-- librería principal del calendario -->
-<script type="text/javascript" src="../../../js/calendario/calendar.js"></script>
-<!-- librería para cargar el lenguaje deseado -->
-<script type="text/javascript" src="../../../js/calendario/lang/calendar-es.js"></script>
-<!-- librería que declara la función Calendar.setup, que ayuda a generar un calendario en unas pocas líneas de código -->
-<script type="text/javascript" src="../../../js/calendario/calendar-setup.js"></script>
-<!--Hoja de estilos del calendario --------------------------------------------------------------------->
 
 </head>
 
@@ -427,9 +421,6 @@ echo "<option value=".$names.">".$names."</option>";
 <div id="inputtex" style="width: 36%;float:left;margin-right:2px;margin-left:13px;">
 <input type="text" id="fecha_inicio"  name="inicio" value="" style="text-align:center;" onkeypress="return acceptNumhorasNada(event)"/>
 </div>
-<div id="calendario">
-<input type="image" src="../../../imagenes/calendar.png" id="lanzador_inicio" alt="Calendario"/>
-</div>
 
 </div>
 
@@ -440,10 +431,6 @@ echo "<option value=".$names.">".$names."</option>";
 
 <div id="inputtex" style="width: 36%;float:left;margin-right:2px;margin-left:13px;">
 <input type="text" id="fecha_fin" name="fin" value="" style="text-align:center;" onkeypress="return acceptNumhorasNada(event)" />
-</div>
-
-<div id="calendario">
-<input type="image" src="../../../imagenes/calendar.png" id="lanzador_fin" alt="Calendario"/>
 </div>
 
 </div>
@@ -459,11 +446,6 @@ echo "<option value=".$names.">".$names."</option>";
 </div>
 
 <input type="hidden" name="cierre" value="0000-00-00" />
-
-
-<div id="calendario">
-<input type="image" src="../../../imagenes/calendar.png" id="lanzador_cierre" alt="Calendario" disabled="disabled"/>
-</div>
 
 </div>
 
@@ -493,29 +475,35 @@ echo "<option value=".$names.">".$names."</option>";
 
 <!-- script que define y configura el calendario-->
 <script type="text/javascript">
-Calendar.setup({
-inputField     :    "fecha_inicio",     // id del campo de texto
-ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto
-button     :    "lanzador_inicio"     // el id del botón que lanzará el calendario
-});
-</script>
-
-<!-- script que define y configura el calendario-->
-<script type="text/javascript">
-Calendar.setup({
-inputField     :    "fecha_fin",     // id del campo de texto
-ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto
-button     :    "lanzador_fin"     // el id del botón que lanzará el calendario
-});
-</script>
-
-<!-- script que define y configura el calendario-->
-<script type="text/javascript">
-Calendar.setup({
-inputField     :    "fecha_cierre",     // id del campo de texto
-ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto
-button     :    "lanzador_cierre"     // el id del botón que lanzará el calendario
-});
+$(function() {
+	$( "#fecha_inicio" ).datepicker({
+	  defaultDate: "+1w",
+	  changeMonth: true,
+	  numberOfMonths: 3,
+	  dateFormat: 'yy-mm-dd',
+	  onClose: function( selectedDate ) {
+		$( "#fecha_fin" ).datepicker( "option", "minDate", selectedDate );
+	  }
+	});
+	$( "#fecha_fin" ).datepicker({
+	  defaultDate: "+1w",
+	  changeMonth: true,
+	  numberOfMonths: 3,
+	  dateFormat: 'yy-mm-dd',
+	  onClose: function( selectedDate ) {
+		$( "#fecha_inicio" ).datepicker( "option", "maxDate", selectedDate );
+	  }
+	});
+  });
+  
+  $(function() {
+	$( "#fecha_cierre" ).datepicker({
+	  defaultDate: "+1w",
+	  changeMonth: true,
+	  numberOfMonths: 1,
+	  dateFormat: 'yy-mm-dd',
+	});
+  });  
 </script>
 
 </body>

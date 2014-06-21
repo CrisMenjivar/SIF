@@ -2,20 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+<script language="javascript" type="text/javascript" src="../../../js/horas/jquery-1.7.1.min.js"></script>
 <script language="javascript" type="text/javascript" src="../../../js/formularios.js"></script>
 <script language="javascript" type="text/javascript" src="../../../js/seguridad.js"></script>
+<script language="javascript" type="text/javascript" src="../../../js/horas/jquery-ui-1.10.4.custom.min.js"></script>
+<script language="javascript" type="text/javascript" src="../../../js/horas/datepicker-es.js"></script>
 <link href="../../../estilo/estiloformularios.css" rel="stylesheet" type="text/css" />
+<link href="../../../estilo/flick/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Revisar AST Colaboradores</title>
-<!--Hoja de estilos del calendario ---------------------------------------------------------------------> 
-<link rel="stylesheet" type="text/css" media="all" href="../../../js/calendario/calendar-blue2.css" title="win2k-cold-1" /> 
-<!-- librería principal del calendario --> 
-<script type="text/javascript" src="../../../js/calendario/calendar.js"></script> 
-<!-- librería para cargar el lenguaje deseado --> 
-<script type="text/javascript" src="../../../js/calendario/lang/calendar-es.js"></script> 
-<!-- librería que declara la función Calendar.setup, que ayuda a generar un calendario en unas pocas líneas de código --> 
-<script type="text/javascript" src="../../../js/calendario/calendar-setup.js"></script>
-<!--Hoja de estilos del calendario --------------------------------------------------------------------->
 
 <script type="text/javascript" src="../../../js/ajax.js">
 </script>
@@ -313,21 +308,12 @@ echo '<li><a href="../ast/ast_excel.php" >Pendientes ('; echo $pendientes; echo 
 <input type="text" style="text-align:center;" name="finicio" id="fecha_inicio" onchange="mitablajax2.micompletar2(this.form);" onkeypress="return acceptNumhorasNada(event)" />
 </div>
 
-<div id="calendario">
-<input type="image" src="../../../imagenes/calendar.png" id="lanzador_inicio" alt="Calendario"/>
-</div>
-
 <div id="textosrevisar4">
 <p><b>Fecha final :</b></p>
 </div>
 <div id="periodocaja" style="width: 14%">
 <input type="text" style="text-align:center;" name="ffinal" id="fecha_fin" onchange="mitablajax2.micompletar2(this.form);" onkeypress="return acceptNumhorasNada(event)"/>
 </div>
-
-<div id="calendario">
-<input type="image" src="../../../imagenes/calendar.png" id="lanzador_fin" alt="Calendario"/>
-</div>
-
 
 </div>
 <div id="cajasrevisar"  >
@@ -377,22 +363,29 @@ echo "<option value=".$correlativos2.">".$correlativos2."</option>";
 </div>
 
 <!-- script que define y configura el calendario--> 
-<script type="text/javascript"> 
-   Calendar.setup({ 
-    inputField     :    "fecha_inicio",     // id del campo de texto 
-     ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
-     button     :    "lanzador_inicio"     // el id del botón que lanzará el calendario 
-}); 
-</script> 
-
-<!-- script que define y configura el calendario--> 
-<script type="text/javascript"> 
-   Calendar.setup({ 
-    inputField     :    "fecha_fin",     // id del campo de texto 
-     ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
-     button     :    "lanzador_fin"     // el id del botón que lanzará el calendario 
-}); 
-</script> 
+<script type="text/javascript">
+$(function() {
+	$( "#fecha_inicio" ).datepicker({
+	  defaultDate: "+1w",
+	  changeMonth: true,
+	  numberOfMonths: 3,
+	  dateFormat: 'yy-mm-dd',
+	  onClose: function( selectedDate ) {
+		$( "#fecha_fin" ).datepicker( "option", "minDate", selectedDate );
+	  }
+	});
+	$( "#fecha_fin" ).datepicker({
+	  defaultDate: "+1w",
+	  changeMonth: true,
+	  numberOfMonths: 3,
+	  dateFormat: 'yy-mm-dd',
+	  onClose: function( selectedDate ) {
+		$( "#fecha_inicio" ).datepicker( "option", "maxDate", selectedDate );
+	  }
+	});
+  });
+	  
+</script>
 
 </body>
 
