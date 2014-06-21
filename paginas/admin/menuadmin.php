@@ -68,7 +68,6 @@ $pendientes=$resP2['tot'];
 ?>
 
 <div id="contenedor" style="height:100%;">
-<div id="logueado">Sesion actual : <?php echo $_SESSION['user']; ?></div>
 <div id="encabezadologin">
 <div id="logo">
 <div id="logoimagen">
@@ -79,6 +78,7 @@ $pendientes=$resP2['tot'];
 </div>
 </div>
 <div id="astdes">
+<p style="height:20px;font-size:12px;padding:0px 0px 0px 0px;margin:0px 0px 5px 0px;text-align:right;width:709px;"><u>Bienvenido : <?php echo $_SESSION['user']; ?></u></p>
 <p>An&aacute;lisis Semanal de Tiempo -- AST</p>
 </div>
 </div>
